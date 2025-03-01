@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('/dashboard');
+    return view('clients.index');
 });
 
 Route::get('/dashboard', function () {
@@ -29,3 +29,9 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+Route::resource('accidents', App\Http\Controllers\AccidentController::class);
+
+
+Route::resource('accidents', App\Http\Controllers\AccidentController::class);

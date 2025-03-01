@@ -27,7 +27,6 @@ body {font-size:16px;}
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-@include('layouts.navBar')
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
@@ -140,7 +139,7 @@ body {font-size:16px;}
           <span class="w3-opacity">per room</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          <a href="{{ route('dashboard')}}" class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</a>
         </li>
       </ul>
     </div>
